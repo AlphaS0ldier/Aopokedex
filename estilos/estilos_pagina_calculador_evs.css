@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Imprima&family=Tourney:wght@500&display=swap");
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  width: 90%;
+  background-color: #bcd8e4;
+  border-radius: 10px;
+  border: solid 3px #6086b7;
+}
+
+main .styleSelect {
+  width: 65%;
+  margin-bottom: 20px;
+}
+main .styleSelect select {
+  font-size: 1rem;
+  padding: 5px;
+}
+main #inputEvs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #inputEvs > * {
+  margin: 10px 0;
+}
+main #inputEvs div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+main #inputEvs div label {
+  margin-bottom: 10px;
+}
+main #inputEvs div input {
+  padding: 5px;
+  font-size: 1.2rem;
+}
+main #inputEvs #evInput input {
+  margin: 20px 0;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  h2 {
+    width: 60%;
+    font-size: 3rem;
+    padding: 20px;
+    border-width: 15px;
+  }
+  main .styleSelect {
+    width: 50%;
+  }
+  main .styleSelect select {
+    font-size: 1.5rem;
+  }
+  main #inputEvs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    font-size: 1.4rem;
+  }
+  main #inputEvs > * {
+    margin: 10px 0;
+  }
+  main #inputEvs div:not(#evInput) input {
+    padding: 5px;
+    font-size: 1.5rem;
+    width: 80%;
+  }
+  main #inputEvs #evInput {
+    grid-column: 2/3;
+  }
+  main #inputEvs #evInput input {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  h2 {
+    width: 40%;
+    font-size: 4rem;
+  }
+  main .styleSelect {
+    width: 35%;
+    margin-bottom: 50px;
+  }
+  main .styleSelect select {
+    font-size: 2rem;
+  }
+  main #inputEvs {
+    font-size: 2rem;
+  }
+  main #inputEvs > * {
+    margin: 15px 0;
+  }
+  main #inputEvs div:not(#evInput) input {
+    padding: 10px;
+    width: 80%;
+    font-size: 2rem;
+  }
+  main #inputEvs #evInput input {
+    padding: 20px;
+    margin: 50px 0;
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=estilos_pagina_calculador_evs.css.map */

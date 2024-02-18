@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aopokédex</title>
+    <link rel="stylesheet" href="../estilos/estilos_generales.css" />
+    <link
+      rel="stylesheet"
+      href="../estilos/estilos_pagina_pokemon_descripcion.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../public/logo-rotated.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header id="head">
+        <img src="../public/logo-rotated.png" />
+        <h1>AOPOKÉDEX</h1>
+      </header>
+      <nav>
+        <div id="buttonNav">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div class="dropdown-content">
+          <a href="./pagina_principal.html">Página Principal</a>
+          <a href="./pagina_pokedex.html">Pokédex</a>
+          <a href="./pagina_ev.html">Calculador EVS</a>
+          <a href="./pagina_danos.html">Calculador Daños</a>
+        </div>
+      </nav>
+      <main>
+        <div id="descripcionPokemon">
+          <h2 class="inputStyle">BULBASAUR</h2>
+          <div id="descripcion">
+            <div id="imagenPokemon">
+              <img
+              class="inputStyle"
+              alt="Imagen de Bulbasaur"
+              src="../public/1.png"
+            />
+            </div>
+            <div class="inputStyle">
+              <h3>DATOS POKÉMON</h3>
+              <div>
+                <p>NÚM. POKÉDEX NATIONAL:</p>
+                <p>001</p>
+              </div>
+              <div>
+                <p>NÚM POKÉDEX REGIONAL:</p>
+                <p>001</p>
+              </div>
+              <div>
+                <p>ESPÉCIE:</p>
+                <p>POKÉMON SEMILLA</p>
+              </div>
+              <div>
+                <p>HABILIDADES:</p>
+                <p>ESPESURA<br />CLOROFILA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="estadisticasPokemon">
+          <h2 class="inputStyle">ESTADÍSTICAS BASE</h2>
+          <div class="inputStyle">
+            <div>
+              <p>SALUD</p>
+              <p>45</p>
+            </div>
+            <div>
+              <p>ATQ.</p>
+              <p>49</p>
+            </div>
+            <div>
+              <p>ATQ. ESPECIAL</p>
+              <p>65</p>
+            </div>
+            <div>
+              <p>DEF.</p>
+              <p>49</p>
+            </div>
+            <div>
+              <p>DEF. ESPECIAL</p>
+              <p>65</p>
+            </div>
+            <div>
+              <p>VELOCIDAD</p>
+              <p>45</p>
+            </div>
+            <div>
+              <p>TOTAL</p>
+              <p>318</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="movimientosPokemon">
+          <h2 class="inputStyle">MOVIMIENTOS</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>NIVEL</th>
+                <th>NOMBRE</th>
+                <th>PODER</th>
+                <th>TIPO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>PLACAJE</td>
+                <td>50</td>
+                <td>
+                  <img
+                    alt="logo moviemiento tipo normal"
+                    src="../public/normal.png"
+                  /><img
+                    alt="logo movimiento fisico"
+                    src="../public/move-physical.png"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>GRUÑIDO</td>
+                <td>-</td>
+                <td>
+                  <img
+                    alt="logo moviemiento tipo normal"
+                    src="../public/normal.png"
+                  /><img
+                    alt="logo movimiento de apoyo"
+                    src="../public/move-status.png"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>DRENADORAS</td>
+                <td>-</td>
+                <td>
+                  <img
+                    alt="logo moviemiento tipo planta"
+                    src="../public/grass.png"
+                  /><img
+                    alt="logo movimiento de apoyo"
+                    src="../public/move-status.png"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>LÁTIGO CESPA</td>
+                <td>35</td>
+                <td>
+                  <img
+                    alt="logo moviemiento tipo planta"
+                    src="../public/grass.png"
+                  /><img
+                    alt="logo movimiento fisico"
+                    src="../public/move-physical.png"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>POLVO VENENO</td>
+                <td>-</td>
+                <td>
+                  <img
+                    alt="logo moviemiento tipo veneno"
+                    src="../public/poison.png"
+                  /><img
+                    alt="logo movimiento de apoyo"
+                    src="../public/move-status.png"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>SOMNÍFERO</td>
+                <td>-</td>
+                <td>
+                  <img
+                    alt="logo moviemiento tipo planta"
+                    src="../public/grass.png"
+                  /><img
+                    alt="logo movimiento de apoyo"
+                    src="../public/move-status.png"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="ventajas">
+          <h2 class="inputStyle">
+            VENTAJAS Y DESVENTAJAS POR TIPOS CONTRA BULBASAUR
+          </h2>
+          <table>
+            <tr class="tipos">
+              <td><img src="../public/normal.png" alt="logo tipo normal" /></td>
+              <td><img src="../public/fire.png" alt="logo tipo fuego" /></td>
+              <td><img src="../public/water.png" alt="logo tipo agua" /></td>
+              <td>
+                <img src="../public/electric.png" alt="logo tipo eléctrico" />
+              </td>
+              <td>
+                <img src="../public/grass.png" alt="logo tipo planta" />
+              </td>
+              <td>
+                <img src="../public/ice.png" alt="logo tipo hielo" />
+              </td>
+              <td>
+                <img src="../public/fighting.png" alt="logo tipo lucha" />
+              </td>
+              <td><img src="../public/poison.png" alt="logo tipo veneno" /></td>
+              <td><img src="../public/ground.png" alt="logo tipo tierra" /></td>
+            </tr>
+            <tr class="multiplicadores">
+              <td><p>x1</p></td>
+              <td><p>x2</p></td>
+              <td><p>x0.5</p></td>
+              <td><p>x0.25</p></td>
+              <td><p>x2</p></td>
+              <td><p>x0.5</p></td>
+              <td><p>x1</p></td>
+              <td><p>x1</p></td>
+              <td><p>x1</p></td>
+            </tr>
+            <tr class="tipos">
+              <td>
+                <img src="../public/flying.png" alt="logo tipo volador" />
+              </td>
+              <td>
+                <img src="../public/psychic.png" alt="logo tipo psíquico" />
+              </td>
+              <td><img src="../public/bug.png" alt="logo tipo bicho" /></td>
+              <td><img src="../public/rock.png" alt="logo tipo roca" /></td>
+              <td>
+                <img src="../public/ghost.png" alt="logo tipo fantasma" />
+              </td>
+              <td><img src="../public/dragon.png" alt="logo tipo dragon" /></td>
+              <td><img src="../public/dark.png" alt="logo tipo oscuro" /></td>
+              <td><img src="../public/steel.png" alt="logo tipo hierro" /></td>
+              <td><img src="../public/fairy.png" alt="logo tipo hada" /></td>
+            </tr>
+
+            <tr class="multiplicadores">
+              <td><p>x2</p></td>
+              <td><p>x2</p></td>
+              <td><p>x1</p></td>
+              <td><p>x1</p></td>
+              <td><p>x1</p></td>
+              <td><p>x1</p></td>
+              <td><p>x1</p></td>
+              <td><p>x0.5</p></td>
+              <td><p>x1</p></td>
+            </tr>
+          </table>
+        </div>
+
+        <a href="#head"><img src="../public/icon_arrow_up_circle.png" /></a>
+      </main>
+      <footer>
+        <div id="redesSociales">
+          <div class="footerContainer">
+            <p>SIGUÉNOS AQUÍ</p>
+            <div>
+              <img alt="Icono de Facebook" src="../public/icon_facebook.png" />
+              <img
+                src="../public/icon_instagram.png"
+                alt="Icono de Instagram"
+              />
+              <img src="../public/icon_twitter.png" alt="Icono de Twitter" />
+            </div>
+          </div>
+          <div class="footerContainer" id="mandaMensaje">
+            <p>MÁNDANOS UN MENSAJE</p>
+            <img alt="Icono de Facebook" src="../public/icon_mail.png" />
+          </div>
+          <div class="footerContainer">
+            <p>COMPÁRTENOS</p>
+            <img alt="Icono de Compartir" src="../public/icon_share.png" />
+          </div>
+          <div class="footerContainer">
+            <a href="terminos.html#termino">TÉRMINOS</a>
+            <a href="terminos.html#FAQ">FAQ</a>
+            <a href="terminos.html#cookies">COOKIES</a>
+          </div>
+        </div>
+        <div id="textoPiePag">
+          <p class="textHighlight">&copy; 2023 Copyright: AoPokedex.com</p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

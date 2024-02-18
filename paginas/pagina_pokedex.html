@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aopokédex</title>
+    <link rel="stylesheet" href="../estilos/estilos_pagina_pokedex.css" />
+    <link rel="stylesheet" href="../estilos/estilos_generales.css">
+    <link
+      rel="shortcut icon"
+      href="../public/logo-rotated.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header id="head">
+        <img src="../public/logo-rotated.png" />
+        <h1>AOPOKÉDEX</h1>
+      </header>
+      <nav>
+        <div id="buttonNav">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div class="dropdown-content">
+          <a href="./pagina_principal.html">Página Principal</a>
+          <a href="#head">Pokédex</a>
+          <a href="./pagina_ev.html">Calculador EVS</a>
+          <a href="./pagina_danos.html">Calculador Daños</a>
+        </div>
+      </nav>
+      <main>
+        <div id="containerTituloPokedex">
+          <div id="backgroundPokeball">
+            <img src="../public/pokeball.png" alt="Logo Pokéball" />
+          </div>
+          <div id="textoPokedex">
+            <h2>POKÉDEX</h2>
+          </div>
+        </div>
+        <div id="containerPokedexSelect">
+          <div class="styleSelect">
+            <select>
+              <option hidden>Selecciona la generación</option>
+              <option>Primera Generación</option>
+              <option>Segunda Generación</option>
+              <option>Tercera Generación</option>
+            </select>
+          </div>
+          <div class="styleSelect">
+            <select>
+              <option hidden>
+                Selecciona el Pokédex
+              </option>
+              <option>Pokédex Regional</option>
+              <option>Pokédex Nacional</option>
+            </select>
+          </div>
+        </div>
+        <div id="contenedorTablaPokemon">
+          <div id="titulosTablaPokedex">
+            <div class="inputStyle">
+              <h2 id="numGeneracion">_ _ _ _ GENERACIÓN</h2>
+            </div>
+            <div class="inputStyle">
+              <h2 id="tipoPokedex">POKÉDEX _ _ _ _</h2>
+            </div>
+          </div>
+          
+          <table>
+            <thead>
+              <tr id="tableHeader">
+                <th>SPRITE</th>
+                <th>NUM. POKÉDEX</th>
+                <th>NOMBRE</th>
+                <th>TIPOS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img alt="Imagen de Bulbasaur" src="../public/1.png" /></td>
+                <td>001</td>
+                <td>BULBASAUR</td>
+                <td>
+                  <img
+                    alt="Imagen del Tipo Planta"
+                    src="../public/grass.png"
+                  /><img
+                    alt="Imagen del Tipo Veneno"
+                    src="../public/poison.png"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><img alt="Imagen de Charmander" src="../public/4.png" /></td>
+                <td>004</td>
+                <td>CHARMANDER</td>
+                <td>
+                  <img alt="Imagen del Tipo Fuego" src="../public/fire.png" />
+                </td>
+              </tr>
+              <tr>
+                <td><img alt="Imagen de Squirtle" src="../public/7.png" /></td>
+                <td>007</td>
+                <td>SQUIRTLE</td>
+                <td>
+                  <img alt="Imagen del Tipo Agua" src="../public/water.png" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <a href="#head"><img src="../public/icon_arrow_up_circle.png" /></a>
+      </main>
+      <footer>
+        <div id="redesSociales">
+          <div class="footerContainer">
+            <p>SIGUÉNOS AQUÍ</p>
+            <div>
+              <img alt="Icono de Facebook" src="../public/icon_facebook.png" />
+              <img src="../public/icon_instagram.png" alt="Icono de Instagram" />
+              <img src="../public/icon_twitter.png" alt="Icono de Twitter" />
+            </div>
+          </div>
+          <div class="footerContainer" id="mandaMensaje">
+            <p>MÁNDANOS UN MENSAJE</p>
+            <img alt="Icono de Facebook" src="../public/icon_mail.png" />
+          </div>
+          <div class="footerContainer">
+            <p>COMPÁRTENOS</p>
+            <img alt="Icono de Compartir" src="../public/icon_share.png" />
+          </div>
+          <div class="footerContainer">
+            <a href="terminos.html#termino">TÉRMINOS</a>
+            <a href="terminos.html#FAQ">FAQ</a>
+            <a href="terminos.html#cookies">COOKIES</a>
+          </div>
+        </div>
+        <div id="textoPiePag">
+          <p class="textHighlight">&copy; 2023 Copyright: AoPokedex.com</p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="../main.js"></script>
+    <script type="module" src="../javascript/pagina_pokedex.js"></script>
+  </body>
+</html>

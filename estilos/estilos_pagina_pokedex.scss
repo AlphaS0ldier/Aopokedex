@@ -1,0 +1,245 @@
+@import "./variables_sass.scss";
+
+main {
+  #containerTituloPokedex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #backgroundPokeball {
+      img {
+        width: 15vw;
+        border-radius: 100%;
+        max-width: 500px;
+      }
+    }
+    #textoPokedex {
+      background-color: $azul;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 15px;
+      border-radius: 15px;
+      margin-left: 10px;
+      h2 {
+        background-color: $azul-claro;
+        text-align: center;
+        border-radius: 20px;
+        font-size: 1.7rem;
+        margin: auto 0;
+        width: 100%;
+        padding: 1px 30px;
+      }
+    }
+  }
+
+  #containerPokedexSelect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .styleSelect {
+      &:first-of-type {
+        margin-bottom: 20px;
+      }
+      select {
+        font-size: 1.2rem;
+        padding: 5px;
+      }
+    }
+  }
+
+  #contenedorTablaPokemon {
+    display: flex;
+    flex-direction: column;
+    #titulosTablaPokedex {
+      display: flex;
+      justify-content: space-between;
+      .inputStyle {
+        text-align: center;
+        border-radius: 20px;
+        border: solid 4px $azul;
+        width: 49%;
+        h2 {
+          font-size: 1rem;
+          padding: 5px;
+        }
+      }
+    }
+    table {
+      margin-top: 20px;
+      border-collapse: separate;
+      border-spacing: 0 20px;
+      thead {
+        background-color: $azul-claro;
+        th {
+          padding: 5px;
+        }
+      }
+      tbody {
+        tr {
+          background-color: $azul-claro;
+          padding-right: 5px;
+          td {
+            text-align: center;
+            padding: 5px;
+            & > img {
+              width: 12vw;
+              height: auto;
+            }
+            &:last-of-type {
+              & > img {
+                width: 5vw;
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    #containerTituloPokedex {
+      #backgroundPokeball {
+        img {
+          width: 10vw;
+        }
+      }
+      #textoPokedex {
+        padding: 5px 15px;
+        margin-left: 20px;
+        h2 {
+          font-size: 3rem;
+          padding: 5px 30px;
+        }
+      }
+    }
+
+    #containerPokedexSelect {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+      .styleSelect {
+        &:first-of-type {
+          margin-bottom: 0;
+          margin-right: 10px;
+        }
+        select {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    #contenedorTablaPokemon {
+      #titulosTablaPokedex {
+        .inputStyle {
+          h2 {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      table {
+        border-collapse: separate;
+        thead {
+          th {
+            font-size: 1.5rem;
+          }
+        }
+        tbody {
+          tr {
+            &:hover {
+              cursor: pointer;
+            }
+            padding-right: 10px;
+            td {
+              font-size: 1.3rem;
+              & > img {
+                width: 15vw;
+              }
+              &:last-of-type {
+                & > img {
+                  width: 10vw;
+                  &:first-of-type {
+                    margin-right: 5px;
+                  }
+                }
+              }
+              padding: 20px 0 20px 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    #containerTituloPokedex {
+      #backgroundPokeball {
+        img {
+          width: 10vw;
+        }
+      }
+      #textoPokedex {
+        padding: 15px;
+        margin-left: 50px;
+        h2 {
+          font-size: 5rem;
+        }
+      }
+    }
+
+    #containerPokedexSelect {
+      width: 100%;
+      .styleSelect {
+        select {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    #contenedorTablaPokemon {
+      width: 100%;
+      #titulosTablaPokedex {
+        .inputStyle {
+          h2 {
+            font-size: 3rem;
+          }
+        }
+      }
+      table {
+        border-collapse: separate;
+        thead {
+          th {
+            font-size: 1.8rem;
+          }
+        }
+        tbody {
+          tr {
+            &:hover {
+              cursor: pointer;
+            }
+            td {
+              font-size: 1.6rem;
+              & > img {
+                width: 10vw;
+                margin-left: 10px;
+              }
+              &:last-of-type {
+                & > img {
+                  width: 5vw;
+                  &:first-of-type {
+                    margin-right: 10px;
+                  }
+                }
+              }
+              padding: 20px 0 20px 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aopokédex</title>
+    <link rel="stylesheet" href="../estilos/estilos_generales.css" />
+    <link
+      rel="shortcut icon"
+      href="../public/logo-rotated.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../estilos/estilos_pagina_resultado_ev.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header id="head">
+        <img src="../public/logo-rotated.png" />
+        <h1>AOPOKÉDEX</h1>
+      </header>
+      <nav>
+        <div id="buttonNav">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div class="dropdown-content">
+          <a href="./pagina_principal.html">Página Principal</a>
+          <a href="./pagina_pokedex.html">Pokédex</a>
+          <a href="./pagina_ev.html">Calculador EVS</a>
+          <a href="./pagina_danos.html">Calculador Daños</a>
+        </div>
+      </nav>
+      <main>
+        <h3 class="inputStyle">ESTADÍSTICAS CALCULADAS A NIVEL 100</h3>
+        <div id="resultadoEv">
+          <div class="contenedor">
+            <img
+            class="inputStyle"
+            alt="Imagen de Bulbasaur"
+            src="../public/1.png"
+          />
+          <div class="inputStyle" id="estadisticas">
+            <div>
+              <p>SALUD</p>
+              <p>45</p>
+            </div>
+            <div>
+              <p>ATQ.</p>
+              <p>49</p>
+            </div>
+            <div>
+              <p>ATQ. ESPECIAL</p>
+              <p>65</p>
+            </div>
+            <div>
+              <p>DEF.</p>
+              <p>49</p>
+            </div>
+            <div>
+              <p>DEF. ESPECIAL</p>
+              <p>65</p>
+            </div>
+            <div>
+              <p>VELOCIDAD</p>
+              <p>45</p>
+            </div>
+            <div>
+              <p>TOTAL</p>
+              <p>318</p>
+            </div>
+          </div>
+          </div>
+          <input class="inputStyle" type="button" id="evInput" value="VOLVER A CALCULAR" />
+        </div>
+      </main>
+      <footer>
+        <div id="redesSociales">
+          <div class="footerContainer">
+            <p>SIGUÉNOS AQUÍ</p>
+            <div>
+              <img alt="Icono de Facebook" src="../public/icon_facebook.png" />
+              <img
+                src="../public/icon_instagram.png"
+                alt="Icono de Instagram"
+              />
+              <img src="../public/icon_twitter.png" alt="Icono de Twitter" />
+            </div>
+          </div>
+          <div class="footerContainer" id="mandaMensaje">
+            <p>MÁNDANOS UN MENSAJE</p>
+            <img alt="Icono de Facebook" src="../public/icon_mail.png" />
+          </div>
+          <div class="footerContainer">
+            <p>COMPÁRTENOS</p>
+            <img alt="Icono de Compartir" src="../public/icon_share.png" />
+          </div>
+          <div class="footerContainer">
+            <a href="terminos.html#termino">TÉRMINOS</a>
+            <a href="terminos.html#FAQ">FAQ</a>
+            <a href="terminos.html#cookies">COOKIES</a>
+          </div>
+        </div>
+        <div id="textoPiePag">
+          <p class="textHighlight">&copy; 2023 Copyright: AoPokedex.com</p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="../main.js"></script>
+    <script type="module" src="../javascript/pagina_ev_resultado.js"></script>
+  </body>
+</html>

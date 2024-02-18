@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Imprima&family=Tourney:wght@500&display=swap");
+main #containerTituloPokedex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #containerTituloPokedex #backgroundPokeball img {
+  width: 15vw;
+  border-radius: 100%;
+  max-width: 500px;
+}
+main #containerTituloPokedex #textoPokedex {
+  background-color: #6086b7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+main #containerTituloPokedex #textoPokedex h2 {
+  background-color: #bcd8e4;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 1.7rem;
+  margin: auto 0;
+  width: 100%;
+  padding: 1px 30px;
+}
+main #containerPokedexSelect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main #containerPokedexSelect .styleSelect:first-of-type {
+  margin-bottom: 20px;
+}
+main #containerPokedexSelect .styleSelect select {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+main #contenedorTablaPokemon {
+  display: flex;
+  flex-direction: column;
+}
+main #contenedorTablaPokemon #titulosTablaPokedex {
+  display: flex;
+  justify-content: space-between;
+}
+main #contenedorTablaPokemon #titulosTablaPokedex .inputStyle {
+  text-align: center;
+  border-radius: 20px;
+  border: solid 4px #6086b7;
+  width: 49%;
+}
+main #contenedorTablaPokemon #titulosTablaPokedex .inputStyle h2 {
+  font-size: 1rem;
+  padding: 5px;
+}
+main #contenedorTablaPokemon table {
+  margin-top: 20px;
+  border-collapse: separate;
+  border-spacing: 0 20px;
+}
+main #contenedorTablaPokemon table thead {
+  background-color: #bcd8e4;
+}
+main #contenedorTablaPokemon table thead th {
+  padding: 5px;
+}
+main #contenedorTablaPokemon table tbody tr {
+  background-color: #bcd8e4;
+  padding-right: 5px;
+}
+main #contenedorTablaPokemon table tbody tr td {
+  text-align: center;
+  padding: 5px;
+}
+main #contenedorTablaPokemon table tbody tr td > img {
+  width: 12vw;
+  height: auto;
+}
+main #contenedorTablaPokemon table tbody tr td:last-of-type > img {
+  width: 5vw;
+  height: auto;
+}
+
+@media only screen and (min-width: 600px) {
+  main #containerTituloPokedex #backgroundPokeball img {
+    width: 10vw;
+  }
+  main #containerTituloPokedex #textoPokedex {
+    padding: 5px 15px;
+    margin-left: 20px;
+  }
+  main #containerTituloPokedex #textoPokedex h2 {
+    font-size: 3rem;
+    padding: 5px 30px;
+  }
+  main #containerPokedexSelect {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main #containerPokedexSelect .styleSelect:first-of-type {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  main #containerPokedexSelect .styleSelect select {
+    font-size: 1.5rem;
+  }
+  main #contenedorTablaPokemon #titulosTablaPokedex .inputStyle h2 {
+    font-size: 1.5rem;
+  }
+  main #contenedorTablaPokemon table {
+    border-collapse: separate;
+  }
+  main #contenedorTablaPokemon table thead th {
+    font-size: 1.5rem;
+  }
+  main #contenedorTablaPokemon table tbody tr {
+    padding-right: 10px;
+  }
+  main #contenedorTablaPokemon table tbody tr:hover {
+    cursor: pointer;
+  }
+  main #contenedorTablaPokemon table tbody tr td {
+    font-size: 1.3rem;
+    padding: 20px 0 20px 15px;
+  }
+  main #contenedorTablaPokemon table tbody tr td > img {
+    width: 15vw;
+  }
+  main #contenedorTablaPokemon table tbody tr td:last-of-type > img {
+    width: 10vw;
+  }
+  main #contenedorTablaPokemon table tbody tr td:last-of-type > img:first-of-type {
+    margin-right: 5px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  main #containerTituloPokedex #backgroundPokeball img {
+    width: 10vw;
+  }
+  main #containerTituloPokedex #textoPokedex {
+    padding: 15px;
+    margin-left: 50px;
+  }
+  main #containerTituloPokedex #textoPokedex h2 {
+    font-size: 5rem;
+  }
+  main #containerPokedexSelect {
+    width: 100%;
+  }
+  main #containerPokedexSelect .styleSelect select {
+    font-size: 2.5rem;
+  }
+  main #contenedorTablaPokemon {
+    width: 100%;
+  }
+  main #contenedorTablaPokemon #titulosTablaPokedex .inputStyle h2 {
+    font-size: 3rem;
+  }
+  main #contenedorTablaPokemon table {
+    border-collapse: separate;
+  }
+  main #contenedorTablaPokemon table thead th {
+    font-size: 1.8rem;
+  }
+  main #contenedorTablaPokemon table tbody tr:hover {
+    cursor: pointer;
+  }
+  main #contenedorTablaPokemon table tbody tr td {
+    font-size: 1.6rem;
+    padding: 20px 0 20px 15px;
+  }
+  main #contenedorTablaPokemon table tbody tr td > img {
+    width: 10vw;
+    margin-left: 10px;
+  }
+  main #contenedorTablaPokemon table tbody tr td:last-of-type > img {
+    width: 5vw;
+  }
+  main #contenedorTablaPokemon table tbody tr td:last-of-type > img:first-of-type {
+    margin-right: 10px;
+  }
+}/*# sourceMappingURL=estilos_pagina_pokedex.css.map */

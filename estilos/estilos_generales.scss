@@ -1,0 +1,279 @@
+@import "./variables_sass.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+*:not(h1, h2) {
+  font-family: $imprima;
+  color: $azul-oscuro;
+}
+
+.textHighlight {
+  color: $blanco;
+}
+
+.inputStyle {
+  background-color: $azul-claro;
+  border-radius: 10px;
+  border: solid 3px $azul;
+}
+
+.buttonStyle {
+  background-color: #bcd8e4;
+  border-radius: 5px;
+  border: 0;
+}
+
+h1,
+h2 {
+  font-family: $tourney;
+}
+
+body {
+  background-color: $blanco;
+}
+.styleSelect {
+  display: flex;
+  flex-direction: column;
+  background-color: $azul;
+  padding: 10px 10px 0 10px;
+  border-radius: 20px 20px 0 0;
+  select {
+    background-color: $azul-claro;
+    border: 0;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 10%;
+}
+
+header {
+  background-color: $azul-oscuro;
+  color: $blanco;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 20%;
+    height: auto;
+    max-width: 160px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-top: 1px;
+  }
+}
+
+nav {
+  display: inline-block;
+  background-color: $azul-claro;
+}
+
+.bar {
+  @for $i from 1 through 3 {
+    &#{$i} {
+      width: 30px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px 10px;
+      transition: 0.4s;
+    }
+  }
+}
+
+.change {
+  .bar {
+    &1 {
+      transform: translate(0, 11px) rotate(-45deg);
+    }
+    &2 {
+      opacity: 0;
+    }
+    &3 {
+      transform: translate(0, -11px) rotate(45deg);
+    }
+  }
+}
+
+.dropdown-content {
+  display: none;
+  &.hide {
+    display: block;
+    position: absolute;
+    background-color: $azul-claro;
+    width: 80%;
+    opacity: 90%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+  }
+  a {
+    font-size: 1.3rem;
+    color: $azul-oscuro;
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+    text-decoration: none;
+    &:hover {
+      background-color: $azul-oscuro;
+      color: $blanco;
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &>*{
+    width: 100%;
+  }
+  & > * {
+    margin: 7% 0;
+  }
+  a {
+    display: flex;
+    justify-content: flex-end;
+    img {
+      width: 10vw;
+      height: auto;
+    }
+  }
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70% 30%;
+  #redesSociales {
+    background-color: $azul-claro;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .footerContainer {
+      margin: 15px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p,
+      a {
+        text-align: center;
+        font-size: 0.6rem;
+        text-decoration: none;
+      }
+      img {
+        height: auto;
+        width: 5.5vw;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          margin: 0 3%;
+          width: 5vw;
+        }
+      }
+    }
+  }
+
+  #textoPiePag {
+    background-color: $azul-oscuro;
+    text-align: center;
+    font-size: 1.2rem;
+    p {
+      margin: auto 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    h1 {
+      font-size: 5vw;
+    }
+    img {
+      width: 15%;
+    }
+  }
+
+  #buttonNav {
+    display: none;
+  }
+  .dropdown-content {
+    display: flex;
+    padding: 2%;
+    a {
+      font-size: 1.3rem;
+      margin: 0 auto;
+    }
+  }
+
+  main {
+    a {
+      img {
+        width: 5vw;
+      }
+    }
+  }
+
+  footer {
+    #redesSociales {
+      .footerContainer {
+        p,
+        a {
+          font-size: 1.2rem;
+        }
+        img {
+          width: 3vw;
+        }
+        div {
+          img {
+            width: 3vw;
+          }
+        }
+      }
+    }
+    #textoPiePag {
+      font-size: 1.3rem;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .dropdown-content {
+    a {
+      font-size: 2rem;
+    }
+  }
+
+  footer {
+    #redesSociales {
+      .footerContainer {
+        p,
+        a {
+          font-size: 1.5rem;
+        }
+        img {
+          width: 2.5vw;
+        }
+        div {
+          img {
+            width: 2.5vw;
+          }
+        }
+      }
+    }
+    #textoPiePag {
+      font-size: 2rem;
+    }
+  }
+}

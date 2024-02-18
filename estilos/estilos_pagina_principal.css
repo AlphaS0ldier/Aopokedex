@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Imprima&family=Tourney:wght@500&display=swap");
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main > * {
+  margin: 7% 0;
+}
+main #containerEslogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #containerEslogan > * {
+  margin: 5%;
+}
+main #containerEslogan > #lapras {
+  height: auto;
+  width: 40%;
+  text-align: center;
+  max-width: 400px;
+}
+main #containerEslogan #eslogan {
+  width: 80%;
+  background-color: #6086b7;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 10px;
+}
+main #containerEslogan #eslogan p {
+  background-color: #101f36;
+  font-size: 1.2rem;
+  padding: 5% 5% 10% 5%;
+  height: 85%;
+  text-align: center;
+}
+main #novedades {
+  background-color: #6086b7;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1% 0;
+}
+main #novedades h2 {
+  background-color: #bcd8e4;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 2rem;
+  margin: auto 0;
+  width: 95%;
+}
+main #articulos {
+  display: flex;
+  flex-direction: column;
+}
+main #articulos .articulo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+main #articulos .articulo img {
+  height: auto;
+  width: 20vw;
+  margin-right: 20px;
+}
+main #articulos .articulo .containerArticulo p {
+  font-size: 0.7rem;
+}
+main #articulos .articulo .containerArticulo .tituloArticulo {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+main #llamadaFormulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #llamadaFormulario #llamada {
+  background-color: #101f36;
+  width: 80%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 4%;
+  margin-bottom: 5%;
+}
+main #llamadaFormulario #formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main #llamadaFormulario #formulario .form-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+}
+main #llamadaFormulario #formulario .form-input > * {
+  margin: 0;
+}
+main #llamadaFormulario #formulario .form-input input {
+  width: 70%;
+  padding: 5px;
+}
+main #llamadaFormulario #formulario #formBoton {
+  margin: 0 auto;
+  width: 20%;
+  padding: 2%;
+}
+
+@media only screen and (min-width: 600px) {
+  main > * {
+    margin: 3% 0;
+  }
+  main #containerEslogan {
+    flex-direction: row;
+  }
+  main #containerEslogan > #lapras {
+    width: 30vw;
+  }
+  main #containerEslogan #eslogan {
+    padding-top: 5vw;
+  }
+  main #containerEslogan #eslogan p {
+    font-size: 1.5rem;
+  }
+  main #novedades {
+    max-width: 500px;
+  }
+  main #novedades h2 {
+    font-size: 3rem;
+  }
+  main #articulos .articulo {
+    margin-bottom: 10px;
+  }
+  main #articulos .articulo .containerArticulo {
+    width: 60%;
+  }
+  main #articulos .articulo .containerArticulo p {
+    font-size: 1.2rem;
+  }
+  main #articulos .articulo .containerArticulo .tituloArticulo {
+    font-size: 1.7rem;
+  }
+  main #llamadaFormulario #formulario .form-input {
+    margin-bottom: 2%;
+  }
+  main #llamadaFormulario #formulario .form-input input {
+    padding: 1vw;
+  }
+  main #llamadaFormulario #formulario #formBoton {
+    padding: 2%;
+    width: 10%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  main #containerEslogan > #lapras {
+    width: 60%;
+  }
+  main #containerEslogan #eslogan {
+    height: 80%;
+    padding-top: 1vw;
+  }
+  main #containerEslogan #eslogan p {
+    font-size: 2.9rem;
+    padding-bottom: 5vw;
+  }
+  main #novedades h2 {
+    font-size: 4rem;
+  }
+  main #articulos .articulo {
+    margin-bottom: 50px;
+  }
+  main #articulos .articulo img {
+    width: 15vw;
+  }
+  main #articulos .articulo .containerArticulo {
+    width: 50%;
+  }
+  main #articulos .articulo .containerArticulo p {
+    font-size: 2rem;
+  }
+  main #articulos .articulo .containerArticulo .tituloArticulo {
+    font-size: 2.5rem;
+  }
+  main #llamadaFormulario {
+    flex-direction: row;
+  }
+  main #llamadaFormulario #llamada {
+    padding: 4vw 1vw;
+    font-size: 2rem;
+  }
+  main #llamadaFormulario #formulario #formBoton {
+    padding: 2%;
+    width: 10%;
+  }
+}/*# sourceMappingURL=estilos_pagina_principal.css.map */

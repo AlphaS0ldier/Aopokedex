@@ -1,0 +1,243 @@
+@import "./variables_sass.scss";
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+main {
+  #descripcionPokemon {
+    #descripcion {
+      display: flex;
+      flex-direction: column;
+      #imagenPokemon {
+        display: flex;
+        justify-content: center;
+        img {
+          height: auto;
+          width: 15vh;
+          padding: 5px;
+        }
+        margin-bottom: 20px;
+      }
+      div {
+        h3 {
+          font-size: 1.5rem;
+        }
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        text-align: center;
+        div {
+          display: flex;
+          align-items: center;
+          font-size: 1.2rem;
+          margin: 10px;
+          p {
+            &:first-of-type {
+              width: 60%;
+            }
+            &:last-of-type {
+              width: 40%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #estadisticasPokemon {
+    display: flex;
+    flex-direction: column;
+    div {
+      padding: 5px;
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  #movimientosPokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      width: 80%;
+    }
+    table {
+      width: 100%;
+      text-align: center;
+      border-collapse: collapse;
+      tbody {
+        font-size: 1.2rem;
+        tr {
+          &:nth-child(odd) {
+            background-color: $azul-claro;
+          }
+          td {
+            img {
+              &:first-of-type {
+                margin-right: 5px;
+              }
+              width: 5vw;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #ventajas {
+    table {
+      width: 100%;
+      text-align: center;
+      border-collapse: separate;
+      border-spacing: 0 15px;
+      .tipos {
+        background-color: $azul-claro;
+        img {
+          width: 5vw;
+          height: auto;
+          padding: 5px 0;
+        }
+      }
+      .multiplicadores {
+        p {
+          color: $blanco;
+          background-color: $azul-oscuro;
+          font-size: 0.7rem;
+          border-radius: 5px;
+          margin: 0 5px;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+.inputStyle {
+  border-radius: 20px;
+  border-width: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 7vh;
+  }
+
+  main {
+    #descripcionPokemon {
+      #descripcion {
+        flex-direction: row;
+        justify-content: center;
+        #imagenPokemon {
+          width: 45%;
+          img {
+            height: 30vw;
+            width: auto;
+            padding: 20px;
+            margin: 0;
+          }
+        }
+        div {
+          h3 {
+            font-size: 1.8rem;
+            margin: 10px 0;
+          }
+          display: block;
+          width: 50%;
+          margin: 0;
+          div {
+            width: initial;
+            font-size: 1.5rem;
+            p {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+
+    #estadisticasPokemon {
+      div {
+        width: 45%;
+        margin: 0 auto;
+        div {
+          width: 100%;
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    #movimientosPokemon {
+      table {
+        thead {
+          font-size: 2.2rem;
+        }
+        tbody {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    #descripcionPokemon {
+      h2 {
+        width: 60%;
+        margin: 5% auto;
+      }
+      #descripcion {
+        #imagenPokemon {
+          img {
+            height: 40vh;
+          }
+        }
+        div {
+          h3 {
+            font-size: 2.5vw;
+          }
+          div {
+            font-size: 2.2rem;
+            p {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+
+    #estadisticasPokemon {
+      align-items: center;
+      h2 {
+        width: 60%;
+      }
+      div {
+        width: 50%;
+        margin: 0;
+        div {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    #ventajas {
+      table {
+        .multiplicadores {
+          p {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+
+  }
+}

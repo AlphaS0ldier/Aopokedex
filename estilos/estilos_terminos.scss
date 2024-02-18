@@ -1,0 +1,32 @@
+@import "./variables_sass.scss";
+
+.terminos {
+  h2 {
+    text-align: center;
+    width: 45%;
+    margin: 5% auto;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .terminos {
+    p {
+      width: 90%;
+      margin: 0 auto;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .terminos {
+    h2 {
+      width: 30%;
+      font-size: 3rem;
+    }
+    p {
+      width: 80%;
+      font-size: 3rem;
+    }
+  }
+}

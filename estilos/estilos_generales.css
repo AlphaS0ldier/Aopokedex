@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Imprima&family=Tourney:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+*:not(h1, h2) {
+  font-family: "Imprima", sans-serif;
+  color: #101f36;
+}
+
+.textHighlight {
+  color: #f7f8fa;
+}
+
+.inputStyle {
+  background-color: #bcd8e4;
+  border-radius: 10px;
+  border: solid 3px #6086b7;
+}
+
+.buttonStyle {
+  background-color: #bcd8e4;
+  border-radius: 5px;
+  border: 0;
+}
+
+h1,
+h2 {
+  font-family: "Tourney", sans-serif;
+}
+
+body {
+  background-color: #f7f8fa;
+}
+
+.styleSelect {
+  display: flex;
+  flex-direction: column;
+  background-color: #6086b7;
+  padding: 10px 10px 0 10px;
+  border-radius: 20px 20px 0 0;
+}
+.styleSelect select {
+  background-color: #bcd8e4;
+  border: 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 10%;
+}
+
+header {
+  background-color: #101f36;
+  color: #f7f8fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  width: 20%;
+  height: auto;
+  max-width: 160px;
+}
+header h1 {
+  font-size: 2rem;
+  margin-top: 1px;
+}
+
+nav {
+  display: inline-block;
+  background-color: #bcd8e4;
+}
+
+.bar1 {
+  width: 30px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 10px;
+  transition: 0.4s;
+}
+.bar2 {
+  width: 30px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 10px;
+  transition: 0.4s;
+}
+.bar3 {
+  width: 30px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 10px;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.dropdown-content {
+  display: none;
+}
+.dropdown-content.hide {
+  display: block;
+  position: absolute;
+  background-color: #bcd8e4;
+  width: 80%;
+  opacity: 90%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+}
+.dropdown-content a {
+  font-size: 1.3rem;
+  color: #101f36;
+  display: flex;
+  justify-content: center;
+  margin: 5% 0;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  background-color: #101f36;
+  color: #f7f8fa;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main > * {
+  width: 100%;
+}
+main > * {
+  margin: 7% 0;
+}
+main a {
+  display: flex;
+  justify-content: flex-end;
+}
+main a img {
+  width: 10vw;
+  height: auto;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70% 30%;
+}
+footer #redesSociales {
+  background-color: #bcd8e4;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer #redesSociales .footerContainer {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer #redesSociales .footerContainer p,
+footer #redesSociales .footerContainer a {
+  text-align: center;
+  font-size: 0.6rem;
+  text-decoration: none;
+}
+footer #redesSociales .footerContainer img {
+  height: auto;
+  width: 5.5vw;
+}
+footer #redesSociales .footerContainer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer #redesSociales .footerContainer div img {
+  margin: 0 3%;
+  width: 5vw;
+}
+footer #textoPiePag {
+  background-color: #101f36;
+  text-align: center;
+  font-size: 1.2rem;
+}
+footer #textoPiePag p {
+  margin: auto 0;
+}
+
+@media only screen and (min-width: 600px) {
+  header h1 {
+    font-size: 5vw;
+  }
+  header img {
+    width: 15%;
+  }
+  #buttonNav {
+    display: none;
+  }
+  .dropdown-content {
+    display: flex;
+    padding: 2%;
+  }
+  .dropdown-content a {
+    font-size: 1.3rem;
+    margin: 0 auto;
+  }
+  main a img {
+    width: 5vw;
+  }
+  footer #redesSociales .footerContainer p,
+  footer #redesSociales .footerContainer a {
+    font-size: 1.2rem;
+  }
+  footer #redesSociales .footerContainer img {
+    width: 3vw;
+  }
+  footer #redesSociales .footerContainer div img {
+    width: 3vw;
+  }
+  footer #textoPiePag {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .dropdown-content a {
+    font-size: 2rem;
+  }
+  footer #redesSociales .footerContainer p,
+  footer #redesSociales .footerContainer a {
+    font-size: 1.5rem;
+  }
+  footer #redesSociales .footerContainer img {
+    width: 2.5vw;
+  }
+  footer #redesSociales .footerContainer div img {
+    width: 2.5vw;
+  }
+  footer #textoPiePag {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=estilos_generales.css.map */

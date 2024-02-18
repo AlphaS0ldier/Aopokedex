@@ -1,0 +1,132 @@
+@import "./variables_sass.scss";
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  width: 90%;
+  background-color: $azul-claro;
+  border-radius: 10px;
+  border: solid 3px $azul;
+}
+
+main {
+  .styleSelect {
+    width: 65%;
+    margin-bottom: 20px;
+    select {
+      font-size: 1rem;
+      padding: 5px;
+    }
+  }
+
+  #inputEvs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > * {
+      margin: 10px 0;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      label {
+        margin-bottom: 10px;
+      }
+      input {
+        padding: 5px;
+        font-size: 1.2rem;
+      }
+    }
+    #evInput{
+      input {
+        margin:  20px 0;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  h2 {
+    width: 60%;
+    font-size: 3rem;
+    padding: 20px;
+    border-width: 15px;
+  }
+
+  main {
+    .styleSelect {
+      width: 50%;
+      select {
+        font-size: 1.5rem;
+      }
+    }
+
+    #inputEvs {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(3,1fr);
+      align-items: center;
+      font-size: 1.4rem;
+      & > * {
+        margin: 10px 0;
+      }
+      div:not(#evInput){
+        input{
+          padding: 5px;
+          font-size: 1.5rem;
+          width: 80%;
+        }
+      }
+      #evInput{
+        grid-column: 2/3;
+        input {
+          padding: 15px;
+          font-size: 1.2rem;
+        }
+      }
+
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h2 {
+    width: 40%;
+    font-size: 4rem;
+  }
+
+  main {
+    .styleSelect {
+      width: 35%;
+      select {
+        font-size: 2rem;
+      }
+      margin-bottom: 50px;
+    }
+
+    #inputEvs {
+      font-size: 2rem;
+      & > * {
+        margin: 15px 0;
+      }
+      div:not(#evInput){
+        input{
+          padding: 10px;
+          width: 80%;
+          font-size: 2rem;
+        }
+      }
+      #evInput{
+        input {
+          padding: 20px;
+          margin: 50px 0;
+          font-size: 1.5rem;
+        }
+      }
+
+    }
+  }
+}
