@@ -215,7 +215,7 @@ main #enviarDano {
 @media only screen and (min-width: 1200px) {
   h2.inputStyle {
     font-size: 5rem;
-    width: 40%;
+    width: 60%;
   }
   main .contenedorCalculo > * {
     margin: 40px 0;
