@@ -153,8 +153,8 @@ main #llamadaFormulario #formulario #formBoton {
     padding: 1vw;
   }
   main #llamadaFormulario #formulario #formBoton {
-    padding: 2%;
     width: 10%;
+    font-size: 1.3rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -196,6 +196,6 @@ main #llamadaFormulario #formulario #formBoton {
   }
   main #llamadaFormulario #formulario #formBoton {
     padding: 2%;
-    width: 10%;
+    width: 15%;
   }
 }/*# sourceMappingURL=estilos_pagina_principal.css.map */

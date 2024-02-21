@@ -182,10 +182,11 @@ footer #redesSociales .footerContainer a {
   text-align: center;
   font-size: 0.6rem;
   text-decoration: none;
+  margin-bottom: 5px;
 }
 footer #redesSociales .footerContainer img {
   height: auto;
-  width: 5.5vw;
+  width: 5vw;
 }
 footer #redesSociales .footerContainer div {
   display: flex;
@@ -194,15 +195,17 @@ footer #redesSociales .footerContainer div {
 }
 footer #redesSociales .footerContainer div img {
   margin: 0 3%;
-  width: 5vw;
+  width: 4.5vw;
 }
 footer #textoPiePag {
   background-color: #101f36;
-  text-align: center;
   font-size: 1.2rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 footer #textoPiePag p {
-  margin: auto 0;
+  width: 100%;
 }
 
 @media only screen and (min-width: 600px) {
@@ -255,10 +258,10 @@ footer #textoPiePag p {
     font-size: 1.5rem;
   }
   footer #redesSociales .footerContainer img {
-    width: 2.5vw;
+    width: 4vw;
   }
   footer #redesSociales .footerContainer div img {
-    width: 2.5vw;
+    width: 4vw;
   }
   footer #textoPiePag {
     font-size: 2rem;

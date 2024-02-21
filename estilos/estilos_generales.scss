@@ -176,10 +176,11 @@ footer {
         text-align: center;
         font-size: 0.6rem;
         text-decoration: none;
+        margin-bottom: 5px;
       }
       img {
         height: auto;
-        width: 5.5vw;
+        width: 5vw;
       }
       div {
         display: flex;
@@ -187,7 +188,7 @@ footer {
         align-items: center;
         img {
           margin: 0 3%;
-          width: 5vw;
+          width: 4.5vw;
         }
       }
     }
@@ -195,10 +196,12 @@ footer {
 
   #textoPiePag {
     background-color: $azul-oscuro;
-    text-align: center;
     font-size: 1.2rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
     p {
-      margin: auto 0;
+      width: 100%;
     }
   }
 }
@@ -280,11 +283,11 @@ footer {
           font-size: 1.5rem;
         }
         img {
-          width: 2.5vw;
+          width: 4vw;
         }
         div {
           img {
-            width: 2.5vw;
+            width: 4vw;
           }
         }
       }
