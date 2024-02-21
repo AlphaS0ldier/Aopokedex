@@ -159,6 +159,13 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    #footerText{
+      a{
+        margin: 5px 0;
+      }
+    }
+
     .footerContainer {
       margin: 15px 0;
       display: flex;
@@ -228,6 +235,11 @@ footer {
 
   footer {
     #redesSociales {
+      #footerText{
+        a{
+          margin: 10px 0;
+        }
+      }
       .footerContainer {
         p,
         a {
@@ -257,6 +269,11 @@ footer {
 
   footer {
     #redesSociales {
+      #footerText{
+        a{
+          margin: 15px 0;
+        }
+      }
       .footerContainer {
         p,
         a {

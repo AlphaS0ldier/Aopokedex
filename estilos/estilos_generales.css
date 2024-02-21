@@ -168,6 +168,9 @@ footer #redesSociales {
   align-items: center;
   justify-content: space-evenly;
 }
+footer #redesSociales #footerText a {
+  margin: 5px 0;
+}
 footer #redesSociales .footerContainer {
   margin: 15px 0;
   display: flex;
@@ -223,6 +226,9 @@ footer #textoPiePag p {
   main a img {
     width: 5vw;
   }
+  footer #redesSociales #footerText a {
+    margin: 10px 0;
+  }
   footer #redesSociales .footerContainer p,
   footer #redesSociales .footerContainer a {
     font-size: 1.2rem;
@@ -240,6 +246,9 @@ footer #textoPiePag p {
 @media only screen and (min-width: 1200px) {
   .dropdown-content a {
     font-size: 2rem;
+  }
+  footer #redesSociales #footerText a {
+    margin: 15px 0;
   }
   footer #redesSociales .footerContainer p,
   footer #redesSociales .footerContainer a {
