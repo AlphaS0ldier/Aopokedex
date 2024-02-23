@@ -15,7 +15,7 @@ main {
     & > * {
       margin: 20px 0;
     }
-    #containerDanoSelect {
+    .containerDanoSelect {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -54,7 +54,7 @@ main {
       }
     }
 
-    #inputBoosts {
+    .inputBoosts {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: auto;
@@ -171,7 +171,7 @@ main {
         margin: 40px 0;
       }
 
-      #containerDanoSelect {
+      .containerDanoSelect {
         flex-direction: row;
         .styleSelect {
           &:first-of-type {
@@ -208,7 +208,7 @@ main {
         }
       }
 
-      #inputBoosts {
+      .inputBoosts {
         & > div {
           h3 {
             font-size: 1.5rem;
@@ -255,7 +255,7 @@ main {
         margin: 40px 0;
       }
 
-      #containerDanoSelect {
+      .containerDanoSelect {
         .styleSelect {
           select {
             font-size: 2rem;
@@ -278,7 +278,7 @@ main {
         }
       }
 
-      #inputBoosts {
+      .inputBoosts {
         & > div {
           h3 {
             font-size: 2rem;

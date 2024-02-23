@@ -14,19 +14,19 @@ main .contenedorCalculo {
 main .contenedorCalculo > * {
   margin: 20px 0;
 }
-main .contenedorCalculo #containerDanoSelect {
+main .contenedorCalculo .containerDanoSelect {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main .contenedorCalculo #containerDanoSelect .styleSelect {
+main .contenedorCalculo .containerDanoSelect .styleSelect {
   width: 100%;
 }
-main .contenedorCalculo #containerDanoSelect .styleSelect:first-of-type {
+main .contenedorCalculo .containerDanoSelect .styleSelect:first-of-type {
   margin-bottom: 30px;
 }
-main .contenedorCalculo #containerDanoSelect .styleSelect select {
+main .contenedorCalculo .containerDanoSelect .styleSelect select {
   font-size: 1.2rem;
   padding: 5px;
 }
@@ -51,24 +51,24 @@ main .contenedorCalculo #inputDanos div input {
   padding: 5px;
   font-size: 1.2rem;
 }
-main .contenedorCalculo #inputBoosts {
+main .contenedorCalculo .inputBoosts {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
   justify-items: center;
 }
-main .contenedorCalculo #inputBoosts > div {
+main .contenedorCalculo .inputBoosts > div {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat(7, 1fr);
   justify-items: center;
 }
-main .contenedorCalculo #inputBoosts > div h3 {
+main .contenedorCalculo .inputBoosts > div h3 {
   font-size: 1rem;
   text-align: center;
   margin-bottom: 30px;
 }
-main .contenedorCalculo #inputBoosts > div > label {
+main .contenedorCalculo .inputBoosts > div > label {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -76,14 +76,14 @@ main .contenedorCalculo #inputBoosts > div > label {
   cursor: pointer;
   font-size: 22px;
 }
-main .contenedorCalculo #inputBoosts > div > label input {
+main .contenedorCalculo .inputBoosts > div > label input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
 }
-main .contenedorCalculo #inputBoosts > div > label .checkmark {
+main .contenedorCalculo .inputBoosts > div > label .checkmark {
   position: absolute;
   top: 0;
   left: 0;
@@ -93,21 +93,21 @@ main .contenedorCalculo #inputBoosts > div > label .checkmark {
   border: 2px solid #6086b7;
   border-radius: 5px;
 }
-main .contenedorCalculo #inputBoosts > div > label:hover input ~ .checkmark {
+main .contenedorCalculo .inputBoosts > div > label:hover input ~ .checkmark {
   background-color: #98c3d5;
 }
-main .contenedorCalculo #inputBoosts > div > label input:checked ~ .checkmark {
+main .contenedorCalculo .inputBoosts > div > label input:checked ~ .checkmark {
   background-color: #4f99b8;
 }
-main .contenedorCalculo #inputBoosts > div > label .checkmark:after {
+main .contenedorCalculo .inputBoosts > div > label .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-main .contenedorCalculo #inputBoosts > div > label input:checked ~ .checkmark:after {
+main .contenedorCalculo .inputBoosts > div > label input:checked ~ .checkmark:after {
   display: block;
 }
-main .contenedorCalculo #inputBoosts > div > label .checkmark:after {
+main .contenedorCalculo .inputBoosts > div > label .checkmark:after {
   left: 8px;
   top: 3px;
   width: 5px;
@@ -158,14 +158,14 @@ main #enviarDano {
   main .contenedorCalculo > * {
     margin: 40px 0;
   }
-  main .contenedorCalculo #containerDanoSelect {
+  main .contenedorCalculo .containerDanoSelect {
     flex-direction: row;
   }
-  main .contenedorCalculo #containerDanoSelect .styleSelect:first-of-type {
+  main .contenedorCalculo .containerDanoSelect .styleSelect:first-of-type {
     margin-bottom: 0px;
     margin-right: 30px;
   }
-  main .contenedorCalculo #containerDanoSelect .styleSelect select {
+  main .contenedorCalculo .containerDanoSelect .styleSelect select {
     font-size: 1.5rem;
   }
   main .contenedorCalculo #inputDanos {
@@ -191,13 +191,13 @@ main #enviarDano {
     padding: 5px;
     font-size: 1.5rem;
   }
-  main .contenedorCalculo #inputBoosts > div h3 {
+  main .contenedorCalculo .inputBoosts > div h3 {
     font-size: 1.5rem;
   }
-  main .contenedorCalculo #inputBoosts > div > label {
+  main .contenedorCalculo .inputBoosts > div > label {
     font-size: 1.5rem;
   }
-  main .contenedorCalculo #inputBoosts > div > label .checkmark {
+  main .contenedorCalculo .inputBoosts > div > label .checkmark {
     height: 30px;
     width: 30px;
   }
@@ -220,10 +220,10 @@ main #enviarDano {
   main .contenedorCalculo > * {
     margin: 40px 0;
   }
-  main .contenedorCalculo #containerDanoSelect {
+  main .contenedorCalculo .containerDanoSelect {
     margin-bottom: 5vw;
   }
-  main .contenedorCalculo #containerDanoSelect .styleSelect select {
+  main .contenedorCalculo .containerDanoSelect .styleSelect select {
     font-size: 2rem;
   }
   main .contenedorCalculo #inputDanos > * {
@@ -235,10 +235,10 @@ main #enviarDano {
   main .contenedorCalculo #inputDanos div input {
     font-size: 2rem;
   }
-  main .contenedorCalculo #inputBoosts > div h3 {
+  main .contenedorCalculo .inputBoosts > div h3 {
     font-size: 2rem;
   }
-  main .contenedorCalculo #inputBoosts > div > label {
+  main .contenedorCalculo .inputBoosts > div > label {
     font-size: 2rem;
   }
   main #enviarDano {
