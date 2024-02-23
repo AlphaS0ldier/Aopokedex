@@ -180,7 +180,7 @@ footer #redesSociales .footerContainer {
 footer #redesSociales .footerContainer p,
 footer #redesSociales .footerContainer a {
   text-align: center;
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   text-decoration: none;
   margin-bottom: 5px;
 }
@@ -237,10 +237,12 @@ footer #textoPiePag p {
     font-size: 1.2rem;
   }
   footer #redesSociales .footerContainer img {
-    width: 3vw;
+    margin-top: 0.5vw;
+    width: 4vw;
   }
   footer #redesSociales .footerContainer div img {
-    width: 3vw;
+    margin-top: 0.5vw;
+    width: 4vw;
   }
   footer #textoPiePag {
     font-size: 1.3rem;
@@ -258,10 +260,12 @@ footer #textoPiePag p {
     font-size: 1.5rem;
   }
   footer #redesSociales .footerContainer img {
-    width: 4vw;
+    margin-top: 1vw;
+    width: 3.5vw;
   }
   footer #redesSociales .footerContainer div img {
-    width: 4vw;
+    margin-top: 1vw;
+    width: 3.5vw;
   }
   footer #textoPiePag {
     font-size: 2rem;
