@@ -58,7 +58,7 @@ main #articulos {
 main #articulos .articulo {
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 main #articulos .articulo img {
   height: auto;
@@ -135,7 +135,7 @@ main #llamadaFormulario #formulario #formBoton {
     font-size: 3rem;
   }
   main #articulos .articulo {
-    margin-bottom: 10px;
+    margin-bottom: 10vw;
   }
   main #articulos .articulo .containerArticulo {
     width: 60%;
@@ -173,7 +173,7 @@ main #llamadaFormulario #formulario #formBoton {
     font-size: 4rem;
   }
   main #articulos .articulo {
-    margin-bottom: 50px;
+    margin-bottom: 8vw;
   }
   main #articulos .articulo img {
     width: 15vw;

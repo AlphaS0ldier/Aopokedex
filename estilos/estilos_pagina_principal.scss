@@ -62,7 +62,7 @@ main {
     .articulo {
       display: flex;
       justify-content: center;
-      margin-bottom: 10px;
+      margin-bottom: 30px;
       img {
         height: auto;
         width: 20vw;
@@ -148,7 +148,7 @@ main {
     }
     #articulos {
       .articulo {
-        margin-bottom: 10px;
+        margin-bottom: 10vw;
         .containerArticulo {
           width: 60%;
           p {
@@ -201,7 +201,7 @@ main {
 
     #articulos {
       .articulo {
-        margin-bottom: 50px;
+        margin-bottom: 8vw;
         img {
           width: 15vw;
         }
