@@ -194,6 +194,9 @@ main #llamadaFormulario #formulario #formBoton {
     padding: 4vw 1vw;
     font-size: 2rem;
   }
+  main #llamadaFormulario #formulario .form-input p {
+    font-size: 1.5rem;
+  }
   main #llamadaFormulario #formulario #formBoton {
     padding: 2%;
     width: 15%;

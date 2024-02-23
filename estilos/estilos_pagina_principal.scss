@@ -224,6 +224,11 @@ main {
         font-size: 2rem;
       }
       #formulario {
+        .form-input{
+        p{
+          font-size: 1.5rem;
+        }
+        }
         #formBoton {
           padding: 2%;
           width: 15%;
